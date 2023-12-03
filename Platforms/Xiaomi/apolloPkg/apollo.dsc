@@ -43,7 +43,13 @@
 [PcdsFixedAtBuild.common]
   # Platform-specific
   gArmTokenSpaceGuid.PcdSystemMemoryBase|0x80000000         # Starting address
+!if $(RAM_SIZE) == 6
+  gArmTokenSpaceGuid.PcdSystemMemorySize|0x180000000        # 6GB Size
+!elseif $(RAM_SIZE) == 8
   gArmTokenSpaceGuid.PcdSystemMemorySize|0x200000000        # 8GB Size
+!else
+!error "Invaild Mem Size! Use 6 or 8."
+!endif
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdFirmwareVendor|L"knowdont228"
 
