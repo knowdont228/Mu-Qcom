@@ -8,6 +8,4 @@
   Include                               # Root include for the package
 
 [Guids.common]
-  # NOTE: For these Values you need to use the GUID you generated earlier!
-  # These are just example Values.
-  gapolloTokenSpaceGuid    = { 0x1ead32ce, 0x3165, 0x49eb, { 0xa9, 0x2d, 0xe8, 0x8a, 0x42, 0x57, 0x20, 0x02 } }
+  gapolloTokenSpaceGuid    = { 5add0583fb, e14bb7, 9855e0, { 5add, 0583, fbe1, 4bb7, 9855, e0c1, a57a, 589c } }
